@@ -11,13 +11,15 @@ import '../styles/Home.css';
 import Header from './Header'
 import Footer from './Footer';
 import QuizBody from './QuizBody';
+import HeroSlider from '../components/HeroSlider'
 
 const Home = () => {
   return (
  <>
  <Header/>
  
- <div class="categories">
+ <HeroSlider/>
+ {/* <div class="categories">
          <div class="small-container">
            <div class="roww">
               <div class="col-3">
@@ -29,9 +31,10 @@ const Home = () => {
                
            </div>
        </div>
-     </div>
+     </div> */}
 
   <div class="offer">
+ 
        <div class="small-container">
            <div class="roww">
            <div class="col-2">
