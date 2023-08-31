@@ -37,13 +37,13 @@ function HealthCare() {
 
   return (
     <>
-    <Header/>
+      <Header />
       <div section className="healthpage">
-      <div className="headerr">
-        <div className="overlay"></div>
-        <div className="text"> Increasing access to healthcare </div>
-      </div>
-      {/* 
+        <div className="headerr">
+          <div className="overlay"></div>
+          <div className="text"> Increasing access to healthcare </div>
+        </div>
+        {/* 
       <section class="facts-section">
         <h2 class="facts-header">Did You Know?</h2>
         <div class="facts-images">
@@ -59,51 +59,52 @@ function HealthCare() {
         </div>
       </section> */}
 
-      <div class="health-about-section">
-        <img
-          src={require("../images/solution.png")}
-          className="health-about-img"
-          alt=""
-        />
-        <div class="health-about-content">
-          <h5 className="health-secondary-heading"> Our Solution </h5>
-          <h2 className="health-heading"> Primary care in minutes</h2>
-          <p class="paragraph">
-            Talk to a board-certified doctor of your choice, by phone or
-            video.Affordable, hassle-free,telehealth appointments from quality
-            healthcare providers on your schedule. No membership fees, no
-            surprise bills, no insurance needed.
-          </p>
-          <button className="doctor-btn">Find My Doctor</button>
+        <div class="health-about-section">
+          <img
+            src={require("../images/solution.png")}
+            className="health-about-img"
+            alt=""
+          />
+          <div class="health-about-content">
+            <h5 className="health-secondary-heading"> Our Solution </h5>
+            <h2 className="health-heading"> Primary care in minutes</h2>
+            <p class="paragraph">
+              Talk to a board-certified doctor of your choice, by phone or
+              video.Affordable, hassle-free,telehealth appointments from quality
+              healthcare providers on your schedule. No membership fees, no
+              surprise bills, no insurance needed.
+            </p>
+            <button className="doctor-btn">Find My Doctor</button>
+          </div>
         </div>
-      </div>
 
-      <div class="health-about-section">
-        <div class="health-about-content">
-          <h2 className="health-heading"> Mobile health clinics</h2>
-          <h5 className="health-secondary-heading">
-            {" "}
-            Bringing healthcare to you{" "}
-          </h5>
-          <p class="paragraph">
-            There are an estimated 3,000 mobile clinics in the U.S. with 10
-            million visits each year. By making health care accessible for both
-            rural and urban communities, mobile clinics ensure that everyone has
-            access to lifesaving preventive, primary care, and specialty
-            services. As trusted providers of quality health care, mobile
-            clinics reach marginalized communities and advance health equity.
-          </p>
-          <Link to="/mobile">
-            <button className="doctor-btn">Find a mobile clinic </button>
-          </Link>
+        <div class="health-about-section">
+          <div class="health-about-content">
+            <h2 className="health-heading"> Mobile health clinics</h2>
+            <h5 className="health-secondary-heading">
+              {" "}
+              Bringing healthcare to you{" "}
+            </h5>
+            <p class="paragraph">
+              There are an estimated 3,000 mobile clinics in the U.S. with 10
+              million visits each year. By making health care accessible for
+              both rural and urban communities, mobile clinics ensure that
+              everyone has access to lifesaving preventive, primary care, and
+              specialty services. As trusted providers of quality health care,
+              mobile clinics reach marginalized communities and advance health
+              equity.
+            </p>
+            <Link to="/mobile">
+              <button className="doctor-btn">Find a mobile clinic </button>
+            </Link>
+          </div>
+          <img
+            src={require("../images/mobile.png")}
+            className="health-about-img"
+            alt=""
+          />
         </div>
-        <img
-          src={require("../images/mobile.png")}
-          className="health-about-img"
-          alt=""
-        />
-      </div>
-      {/* <section className="benefits-section">
+        {/* <section className="benefits-section">
         <div className="benefit">
           <img src="" className="benegit-img" alt="" />
           <h5 className="benefit-header"> Improve Care Coordination</h5>
@@ -133,12 +134,12 @@ function HealthCare() {
           </p>
         </div>
       </section> */}
+        {/* 
+      <Filters setSelectedFilters={setSelectedFilters} /> */}
 
-      <Filters setSelectedFilters={setSelectedFilters} />
-      <ProviderList providers={filteredProviders} />
-    </div>
+        <ProviderList providers={filteredProviders} />
+      </div>
     </>
-    
   );
 }
 
